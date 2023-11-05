@@ -1,0 +1,4 @@
+name: FunnyHappiness
+version: '${project.version}'
+main: com.gashdarnit.funnyhappiness.FunnyHappiness
+api-version: '1.20'
