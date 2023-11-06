@@ -2,3 +2,7 @@ name: FunnyHappiness
 version: '1.0'
 main: com.gashdarnit.funnyhappiness.FunnyHappiness
 api-version: '1.20'
+commands:
+  religion:
+    description: Lets player join / create a religion
+    usage: /<command>

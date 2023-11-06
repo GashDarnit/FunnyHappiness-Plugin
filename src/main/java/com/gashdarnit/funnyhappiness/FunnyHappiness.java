@@ -1,5 +1,6 @@
 package com.gashdarnit.funnyhappiness;
 
+import com.gashdarnit.funnyhappiness.commands.MiscellaneousCommands;
 import com.gashdarnit.funnyhappiness.events.BetterShield;
 import com.gashdarnit.funnyhappiness.events.Taboo;
 import org.bukkit.ChatColor;
@@ -11,7 +12,11 @@ public final class FunnyHappiness extends JavaPlugin {
     public void onEnable() {
         getServer().getPluginManager().registerEvents(new BetterShield(), this);
         getServer().getPluginManager().registerEvents(new Taboo(), this);
-        
+
+        MiscellaneousCommands miscellaneousCommands = new MiscellaneousCommands();
+        getCommand("religion").setExecutor(miscellaneousCommands);
+        getCommand("religion").setTabCompleter(miscellaneousCommands);
+
         getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[FunnyHappiness] is enabled!");
 
     }
