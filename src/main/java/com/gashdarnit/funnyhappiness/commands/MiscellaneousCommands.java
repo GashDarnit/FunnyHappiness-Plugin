@@ -33,7 +33,7 @@ public class MiscellaneousCommands implements CommandExecutor, TabExecutor {
 
         Player player = (Player) commandSender;
 
-        // /religion <operation>> <Religion>
+        // /religion <operation> <Religion>
         if(command.getName().equalsIgnoreCase("religion")) {
             if(args.length == 2) {
                 try {
